@@ -1,0 +1,6 @@
+.cgv {
+    padding: 3em 1em;
+    @media (min-width: $breakpoint-medium-alt) {
+        padding: 7em 4em 3em 4em;
+    }
+}

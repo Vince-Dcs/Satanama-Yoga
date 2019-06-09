@@ -1,0 +1,44 @@
+.content {
+    overflow: hidden;
+
+    &__school {
+        background-position: center;
+        background-position-y: 35%;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        width: 100vw;
+
+
+        &__item {
+            bottom: 5em;
+            color: $color-primary;
+            left: 10%;
+            position: absolute;
+            text-align: center;
+            width: 80%;
+
+            @media (min-width: $breakpoint-medium) {
+                left: 25%;
+                text-align: center;
+                width: 50%;
+            }
+
+            @media (min-width: $breakpoint-large) {
+                left: 4em;
+                width: 35%;
+            }
+
+            &__button {
+                @include button;
+            }
+            &__button:hover {
+                @include button_hover;
+            }
+        }
+        p {
+            padding-bottom: 1.8em;
+        }
+
+    }
+}

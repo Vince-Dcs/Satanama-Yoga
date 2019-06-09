@@ -1,0 +1,175 @@
+.content__diy {
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height:145vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    @media (min-width: $breakpoint-small) {
+        height:162vh;
+    }
+    @media (min-width: $breakpoint-medium) {
+        height:180vh;
+    }
+    @media (min-width: $breakpoint-medium-alt) {
+        height:200vh;
+    }
+    @media (min-width: $breakpoint-large) {
+        height: 68vh;
+    }
+    @media (min-width: $breakpoint-xlarge) {
+        height: 95vh;
+    }
+
+
+    &__informations {
+        color: $color-primary;
+        left: 10%;
+        padding-top: 2em;
+        position: absolute;
+        text-align: center;
+        width: 80%;
+        @media (min-width: $breakpoint-medium-alt) {
+            text-align: left;
+        }
+        @media (min-width: $breakpoint-large) {
+            width: 80%;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 12em;
+        @media (min-width: $breakpoint-large) {
+            flex-direction: row;
+            width: 90vw;
+        }
+        
+        
+
+        &__card {
+            background-position: top;
+            background-size: cover;
+            border-radius: 6px;
+            display: flex;
+            height: 35vh;
+            justify-content: center;
+            margin: 1em;
+            position: relative;
+            width: 50vw;
+            @media (min-width: $breakpoint-small) {
+                height: 40vh;
+                width: 50vw;
+            }
+            @media (min-width: $breakpoint-medium) {
+                height: 45vh;
+                width: 35vw;
+            }
+            @media (min-width: $breakpoint-medium-alt) {
+                height: 52vh;
+                width: 40vw;
+            }
+            @media (min-width: $breakpoint-large) {
+                height: 45vh;
+                width: 30vw;
+            }
+            @media (min-width: $breakpoint-xlarge) {
+                height: 60vh;
+                width: 30vw;
+            }
+
+
+            &__button {
+                @include button_secondary;
+                bottom: 2em;
+                position: absolute;
+                
+            }
+            &__button:hover {
+                @include button_secondary_hover;
+            }
+        }
+    }
+}
+
+
+    // SASS page pratiquer 
+.content-cpt {
+    color: $color-primary;
+    margin: auto;
+    margin: 3em 0.4em;
+    overflow: hidden;
+    @media (min-width: $breakpoint-medium-alt) {
+        margin: 8em 1em;
+        overflow: hidden;
+        width: 90vw;    
+    }
+    @media (min-width: $breakpoint-large) {
+        margin: 8em auto;
+        overflow: hidden;
+        width: 80vw;    
+    }
+
+    &__main {
+        @media (min-width: $breakpoint-large) {
+            margin-bottom: 6em;
+        }
+        
+        &__text {
+            text-align: justify;
+        }
+    }
+}
+
+.content__diy__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-large) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        &__cards {
+            background-position: top;
+            background-size: cover;
+            border-radius: 6px;
+            display: flex;
+            height: 45vh;
+            justify-content: center;
+            margin: 1em;
+            position: relative;
+            width: 60vw;
+            @media (min-width: $breakpoint-medium) {
+                height: 55vh;
+                width: 45vw;
+            }
+            @media (min-width: $breakpoint-medium-alt) {
+                height: 60vh;
+                width: 45vw;
+            }
+            @media (min-width: $breakpoint-large) {
+                height: 40vh;
+            }
+            @media (min-width: $breakpoint-xlarge) {
+                height: 55vh;
+                width: 30vw;
+            }
+            
+
+
+            &__button {
+                @include button_secondary;
+                bottom: 2em;
+                position: absolute;
+                
+            }
+            &__button:hover {
+                @include button_secondary_hover;
+            }
+        }
+}

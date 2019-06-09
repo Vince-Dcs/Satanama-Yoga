@@ -1,0 +1,101 @@
+@mixin breakpoint-small() {
+    @media (min-width: $breakpoint-small) {
+        @content; 
+    }
+}
+@mixin breakpoint-medium() {
+    @media (min-width: $breakpoint-medium) {
+        @content; 
+    }
+}
+@mixin breakpoint-medium() {
+    @media (min-width: $breakpoint-medium-alt) {
+        @content; 
+    }
+}
+@mixin breakpoint-large() {
+    @media (min-width: $breakpoint-large) {
+        @content;
+    }
+}
+@mixin breakpoint-xlarge() {
+    @media (min-width: $breakpoint-xlarge) {
+        @content; 
+    }
+}
+
+@mixin button {
+    background-image: linear-gradient(to right, #3ce8ad, #a9c9ff , );
+    border-radius: 25px;
+    color: $color-secondary;
+    font: {
+        size: 0.8em;
+        weight: 700;
+    }
+    padding: 1em 3em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@mixin button_hover {
+    background: transparent;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    text-decoration: none;
+    transition-duration:3s;
+    transition-property: background-color;
+}
+
+@mixin button_secondary {
+    background: transparent;
+    border: 2px solid $color-secondary;
+    border-radius: 25px;
+    color: $color-secondary;
+    font: {
+        size: 0.8em;
+        weight: 700;
+    }
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin button_secondary_hover {
+    background-color: $color-secondary;
+    border: 2px solid $color-secondary;
+    border-radius: 25px;
+    color: $color-primary;
+    font: {
+        size: 0.8em;
+        weight: 700;
+    }
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin button_alt {
+    color: $color-primary;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@mixin button_alt_hover {
+    color: $color-alt-secondary;
+    text-decoration: none;
+}
+
+@mixin paging {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 2em;
+    
+    &__button {
+        @include button_alt;
+    }
+    &__button:hover {
+        @include button_alt_hover;
+    }
+}

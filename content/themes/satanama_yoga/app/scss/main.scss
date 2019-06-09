@@ -1,0 +1,43 @@
+// 1. Abstracts
+@import
+    'abstracts/mixins',
+    'abstracts/variables';
+    
+
+// 2. Vendors
+@import 
+    '~font-awesome/scss/font-awesome';
+@import 
+    '~bootstrap/scss/bootstrap';
+@import 
+    '~reset-css/sass/reset';
+
+// 3. Base
+@import
+    'base/base',
+    'base/fonts';
+
+// 4. Layout
+@import
+    'layout/blog',
+    'layout/diy',
+    'layout/footer',
+    'layout/form',
+    'layout/header',
+    'layout/main',
+    'layout/schedule';
+
+// 5. Components
+@import
+    'components/button';
+
+// 6. Pages
+@import 'pages/school',
+        'pages/blog',
+        'pages/cgv',
+        'pages/cours',
+        'pages/contact',
+        'pages/article',
+        'pages/practice';
+
+// 7. Themes

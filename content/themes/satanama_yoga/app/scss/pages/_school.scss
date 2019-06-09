@@ -1,0 +1,87 @@
+.main-school {
+    color: $color-primary;
+    padding: 3em 2em 1em 2em;
+    width: 100vw;
+    @media (min-width: $breakpoint-medium) {
+       padding: 4em 3em 1em 3em;
+    }
+    @media (min-width: $breakpoint-medium-alt) {
+        padding: 8em 3em 2em 3em;
+    }
+    @media (min-width: $breakpoint-xlarge) {
+        margin: auto;
+        width: 1100px;
+    }
+
+    &__information {
+        
+        &__text {
+            text-align: justify;
+        }
+    }
+    &__content {
+        margin-top: 3em;
+        text-align: center;
+        
+        &__teacher {
+            margin-bottom: 3em;
+            @media (min-width: $breakpoint-large) {
+                display: flex;
+                
+            }
+            
+            &__image {
+                border-radius: 20px 20px 20px 20px;
+                border: 1px solid transparent;
+                height: 30vh; 
+                margin-bottom: .5em;
+                object-fit: cover;
+                object-position: top;
+                overflow: hidden;            
+                width: 100%;
+
+                @media (min-width: $breakpoint-small) {
+                    height: 40vh;  
+                }
+                @media (min-width: $breakpoint-medium) {
+                    height: 50vh; 
+                    width: 70%; 
+                }
+                @media (min-width: $breakpoint-large) {
+                    width: 50%; 
+                }
+            }
+            &__info {
+
+                
+
+                @media (min-width: $breakpoint-large) {
+                    width: 50%; 
+                    margin: auto;
+                    padding: 0 2em;
+                }
+                &__text {
+                    margin-bottom: 1em;
+                    text-align: center;
+                    @media (min-width: $breakpoint-medium) {
+                        margin: auto;
+                        margin-bottom: 1em;
+                        width: 70%; 
+                    }
+                    @media (min-width: $breakpoint-large) {
+                        width: 100%; 
+                    }
+                }
+                &__button {
+                    @include button;
+                    padding: .5em 4.5em;  
+                }
+                &__button:hover {
+                    @include button_hover;
+                }
+            }
+            
+        }
+    }
+    
+}

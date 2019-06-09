@@ -1,0 +1,69 @@
+.article {
+    width: 100%;
+
+    @media (min-width: $breakpoint-medium-alt) {
+        padding-top: 8em;
+       
+    }
+
+  
+    &__header-article {    
+        &__image {
+            height: 40vh;
+            object-fit: cover;
+            object-position: 25% 25%;
+            overflow: hidden;
+            width: 100vw;
+            @media (min-width: $breakpoint-medium-alt) {
+                height: 50vh;   
+            }
+            @media (min-width: $breakpoint-large) {
+                height: 65vh;   
+            }
+            @media (min-width: $breakpoint-xlarge) {
+                height: 75vh;  
+                object-fit: cover;
+               
+            }
+        }
+    }
+    
+    &__article-content {
+        color: $color-primary;
+        padding: 2em;
+        margin: auto;
+        text-align: justify;
+        width: 100%;
+        @media (min-width: $breakpoint-large) {
+           padding: 4em;     
+        }
+        @media (min-width: $breakpoint-xlarge) {
+            padding: 4em 6em;     
+        }
+
+        &__title {
+            padding-bottom: 1em;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        &__text {
+            height: 0.8em;
+        }
+    }
+
+}
+
+.paging-article {
+    @include paging;
+    
+}
+.paging-article a {
+    color: $color-primary;
+    text-decoration: none;
+    
+}
+.paging-article a:hover {
+    color: $color-alt-secondary;
+    text-decoration: none;
+    
+}

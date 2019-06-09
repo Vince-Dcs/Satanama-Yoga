@@ -1,0 +1,135 @@
+.blog {
+    color: $color-primary;
+    overflow: hidden;
+    padding: 3em 2em;
+    width: 100vw;
+    
+    @media (min-width: $breakpoint-medium-alt) {
+        padding-top: 8em;
+       
+    }
+
+    &__information {
+        @media (min-width: $breakpoint-xlarge) {
+            width: 1100px;
+            margin: auto;
+        }
+        &__title {
+
+        }
+        &__text {
+            text-align: justify;
+        }
+    }
+    &__categories {
+        padding-top: 1em;
+        @media (min-width: $breakpoint-medium) {
+            margin-bottom: -3em;
+        }
+        @media (min-width: $breakpoint-medium-alt) {
+            margin-bottom: -6em;
+        }
+        @media (min-width: $breakpoint-large) {
+            margin-bottom: -6em;
+        }
+        @media (min-width: $breakpoint-xlarge) {
+            width: 1100px;
+            margin: auto;
+            margin-bottom: -6em;
+        }
+
+        a {
+            @include button_alt;
+            margin-right: 2em;
+        }
+        a:hover {
+            @include button_alt_hover;
+        }
+    }
+    &__posts {
+        margin-bottom: 3em;
+        margin-top: 2em;
+        @media (min-width: $breakpoint-medium) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media (min-width: $breakpoint-medium-alt) {
+            margin-bottom: 3em;
+            margin-top: 6em;
+        }
+        @media (min-width: $breakpoint-xlarge) {
+            width: 1100px;
+            margin: auto;
+            margin-bottom: 3em;
+            margin-top: 6em;
+        }
+        &__post {
+            margin-top: 3em;
+            text-align: center;
+            @media (min-width: $breakpoint-medium) {
+                width: 250px;
+               padding: 0 1em;
+            }
+            @media (min-width: $breakpoint-xlarge) {
+                padding: unset;
+            }
+
+            
+            
+            &__image {
+                border-radius: 20px 20px 20px 20px;
+                border: 1px solid transparent;
+                height: 30vh; 
+                object-fit: cover;
+                overflow: hidden;            
+                width: 100%;
+                @media (min-width: $breakpoint-medium) {
+                    height: 50vh;
+                }
+                
+                
+            }
+            &__title {
+
+            }
+            &__text {
+                padding-bottom: 2.5em;
+                text-align: justify;
+                line-height: 1.3em;
+            }
+            &__button {
+                @include button;
+                padding: .5em 4.5em;
+                
+            }
+            &__button:hover {
+                @include button_hover;
+            }
+        }
+    }
+   
+}
+
+.paging-blog {
+    @include paging;
+    padding-top: 4em;
+
+    @media (min-width: $breakpoint-large) {
+        width: 60%;
+    }
+    @media (min-width: $breakpoint-xlarge) {
+        width: 50%;
+    }
+    
+}
+.paging-blog a {
+    color: $color-primary;
+    text-decoration: none;
+    
+}
+.paging-blog a:hover {
+    color: $color-alt-secondary;
+    text-decoration: none;
+    
+}

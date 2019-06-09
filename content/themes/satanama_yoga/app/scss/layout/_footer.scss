@@ -1,0 +1,129 @@
+.footer {
+    background-color: $color-primary;
+    color: $color-secondary;
+    padding: 1.5em;
+    @media (min-width: $breakpoint-large) {
+        padding: 1.5em 3em 1em 3em;
+    }
+
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+        
+    }
+
+    &__block {
+        @media (min-width: $breakpoint-large) {
+            display: flex;
+        }
+        @media (min-width: $breakpoint-xlarge) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__social {  
+            border-bottom: 1px solid $color-secondary;
+            @media (min-width: $breakpoint-large) {
+                border-bottom: none;
+            }
+
+            &__title {
+                color: $color-secondary;
+                margin-bottom: .5em;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            &__text {
+                color: $color-secondary;
+                margin-bottom: .5em;
+                @media (min-width: $breakpoint-large) {
+                    width: 80%;
+                }
+            }
+            &__list {
+                display: flex;
+                margin-bottom: 1em;
+
+                &__link {
+                    margin-right: 1em;
+                }
+                &__link:last-child {
+                    margin-right: 0;
+                }
+                
+            }
+        }
+        &__widgets {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5em;
+            @media (min-width: $breakpoint-large) {
+                margin-top: 2em;
+                width: 80%;
+            }
+            @media (min-width: $breakpoint-xlarge) {
+                justify-content: space-between;
+                width: 50%;
+            }
+            
+            &__list {
+                
+                &__link {
+                    margin-bottom: .5em;
+                }
+                &__link:first-child {
+                    font: {
+                        weight: 700;
+                        size: 1.1em;
+                    }
+                }
+            }
+        }
+
+        
+    }
+    &__copyright {
+        @media (min-width: $breakpoint-medium-alt) {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        border-top: 1px solid $color-secondary;
+        &__text {
+            color: $color-secondary;
+            margin-bottom: .5em;
+            margin-top: 1em;
+            text-align: center;
+            @media (min-width: $breakpoint-medium) {
+                text-align: left;
+            }
+        }
+        &__list {
+            margin-bottom: .5em;
+            margin-top: 1em;
+            text-align: center;
+            @media (min-width: $breakpoint-medium) {
+                text-align: right;
+            }
+            @media (min-width: $breakpoint-large) {
+                margin-top: 1em;
+            }
+            &__link {
+                margin-right: 1em;
+                font-weight: 700;
+                
+            }
+        }
+    }
+}
+
+#menu-item-129,
+#menu-item-134,
+#menu-item-150,
+#menu-item-151 {
+    font-weight: bold;
+}
+.sub-menu {
+    font-weight: 400;
+    line-height: 1.5;
+}

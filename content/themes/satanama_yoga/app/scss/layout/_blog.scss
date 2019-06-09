@@ -1,0 +1,47 @@
+.content__blog {
+    background-position-x: 75%;
+    background-position-y: 35%;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+
+        &__informations {
+            bottom: 8em;
+            color: $color-primary;
+            position: absolute;
+            right: 10%;
+            text-align: center;
+            width: 80%;
+
+            @media (min-width: $breakpoint-medium) {
+                left: 25%;
+                text-align: center;
+                width: 50%;
+            }
+
+            @media (min-width: $breakpoint-large) {
+                bottom: 15em;
+                left: 50%;
+                text-align: center;
+                width: 50%;
+                
+            }
+            &__text {
+                text-align: center;
+            }
+
+            &__button {
+                @include button;
+            }
+            &__button:hover {
+                @include button_hover;
+            }
+
+            &__text {
+                padding-bottom: 2em;
+            }
+        }
+
+
+}

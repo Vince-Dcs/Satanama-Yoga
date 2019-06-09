@@ -1,0 +1,11 @@
+/vendor/
+/wp/
+/wp-config.php
+
+/content/themes/twentynineteen
+*/content/plugins
+!/content/plugins/pratiquer-settings
+!/content/plugins/ecole-settings
+/content/languages
+/content/upgrade
+!/content/uploads

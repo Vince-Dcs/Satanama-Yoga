@@ -1,0 +1,28 @@
+body {
+    font-family: $font-stack;
+    position: relative;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-primary;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+}
+h2, h3, h4, h5, h6 {
+    color: $color-primary;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+}
+
+p {
+    color: $color-primary;
+    line-height: 1.5em;
+    text-align: justify;
+}

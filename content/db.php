@@ -1,0 +1,1 @@
+/var/www/html/Projet/Ecole-de-Yoga/content/plugins/query-monitor/wp-content/db.php

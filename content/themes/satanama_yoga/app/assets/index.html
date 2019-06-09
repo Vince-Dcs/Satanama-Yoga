@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Section header comprenant la navbar. -->
+  <header class="header">
+    <div class="topmenu">
+      <a href="" class="logo-alt">Satanama Yoga</a>
+      <a href="" class="logo"><img class="logo__image" src="images/satanamayoga_logo.png" alt=""></a>
+      <a href="#" class="burger-button displayMenu "><i class="fa fa-bars"></i></a>
+
+      <nav class="nav nav--hidden">
+      
+          <ul class="nav__main">
+            <li class="nav__main__item"><a href="" class="nav__main__item__link">L'école</a></li>
+            <li class="nav__main__item"><a href="" class="nav__main__item__link">Cours</a></li>
+            <li class="nav__main__item"><a href="" class="nav__main__item__link">Blog</a></li>
+            <li class="nav__main__item"><a href="" class="nav__main__item__link">Pratiquer</a></li>
+          </ul>
+          <a href="#" class="close-button hideMenu"><i class="fa fa-times"></i></a>
+          <!--
+          <ul class="nav__login">
+            <li class="nav__login__item"><a href="" class="nav__login__item__link">Connexion</a></li>
+            <li class="nav__login__item"><a href="" class="nav__login__item__link">Inscription</a></li>
+          </ul>
+            -->
+        </nav>
+    </div>
+  </header>
+
+  
+
+  <!-- Partie Main, comprenant les différentes section du site internet -->
+  <main class="content">
+  <!-- Partie l'école, avec un lien vers la page du site internet -->
+    <section class="content__school" style="background-image: url('images/landingpage_section-ecole-white.jpg');">
+      <div class="content__school__item">
+        <h1 class="content__school__item__title">Satanama yoga</h1>
+        <p class="content__school__item__text">Bienvenu sur le site de l'école <span  class="contente__school__item__text__uppercase">Satanama yoga</span> ! C'est ici que vous pouvez directement reserver vos cours en ligne.</p>
+        <a href="integration-ecole.html" class="content__school__item__button">En savoir plus</a>
+      </div>
+    </section>
+  <!-- Partie réserver, avec un lien sur la section correspondante du site internet -->
+    <section class="content__schedule" style="background-image: url('images/landingpage_section-reserver.png');">
+      <div class="content__schedule__item">
+        <img class="content__schedule__item__svg" src="images/clock.svg" alt="">
+        <div class="content__schedule__item__informations"> 
+          <h1 class="content__schedule__item__informations__title">Nos prochains cours</h1>
+          <p class="content__schedule__item__informations__text">Vous pouvez désormais vous inscrire en ligne avec notre calendrier partagé. Ne raté plus aucun cours de votre école.</p>
+          <a href="" class="content__schedule__item__informations__button">Reserver</a>
+        </div>
+      </div>
+    </section>
+  <!-- Partie blog, avec un lien cliquable vers la partie actualité du site Satanama yoga -->
+    <section class="content__blog" style="background-image: url('images/landingpage_section-blog-white.jpg');">
+      <div class="content__blog__informations">
+        <h1 class="content__blog__informations__title">Notre actualité</h1>
+        <p class="content__blog__informations__text">Suivez l'actualité de l'école Satanama sur leur  blog</p>
+        <a href="integration-blog.html" class="content__blog__informations__button"> En lire plus</a>
+      </div>
+    </section>
+  <!-- Section  pour appprendre à pratiquer le yoga seul. Chaque photo amène sur une partie/catégorie de la section pratiquer sur site web -->
+    <section class="content__diy" style="background-image: url('images/landingpage_section-pratiquerjpg.jpg');">
+      <div class="content__diy__informations">
+        <h1 class="content__diy__informations__title">Pratiquer le yoga</h1>
+        <p class="content__diy__informations__text">initiez vous aux diverses pratiques du yoga grâce à nos fiches conseils. Un bon premier point d'entrée dans la pratique.</p>
+      </div>
+      <div class="content__diy__cards">
+        <div class="content__diy__cards__card" style="background-image: url('images/landingpage_section-pratiquer_postures.jpg');">
+          <img src="" alt="" class="content__diy__cards__card__image">
+          <a href="integration-pratiquer.html" class="content__diy__cards__card__button">Postures</a>
+        </div>
+        <div class="content__diy__cards__card" style="background-image: url('images/landingpage_section-pratiquer_meditation.jpg');">
+          <img src="" alt="" class="content__diy__cards__card__image">
+          <a href="" class="content__diy__cards__card__button">Meditation</a>
+        </div>
+        <div class="content__diy__cards__card" style="background-image: url('images/landingpage_section-pratiquer_respiration.jpg');">
+          <img src="" alt="" class="content__diy__cards__card__image">
+          <a href="" class="content__diy__cards__card__button">Respiration</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__block">
+      <div class="footer__block__social">
+        <h3 class="footer__block__social__title">Satanama Yoga</h3>
+        <p class="footer__block__social__text">Apprenez le yoga dans les meilleures conditions, Namaste.</p>
+        <ul class="footer__block__social__list">  <!-- Partie avec les icones des réseaux sociaux -->
+          <li class="footer__block__social__list__link"><a href=""><i class="fa fa-facebook-f"></i></a></li>
+          <li class="footer__block__social__list__link"><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li class="footer__block__social__list__link"><a href=""><i class="fa fa-instagram"></i></a></li>
+          <li class="footer__block__social__list__link"><a href=""><i class="fa fa-youtube"></i></a></li>                
+        </ul>
+      </div>
+
+      <div class="footer__block__widgets">
+        <ul class="footer__block__widgets__list">
+          <li class="footer__block__widgets__list__link"><a href="">Blog</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Voyages</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Yoga-thérapie</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Meditation</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Alimentation</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Respiration</a></li>
+        </ul>
+        <ul class="footer__block__widgets__list">
+          <li class="footer__block__widgets__list__link"><a href="">Cours</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Réserver</a></li>
+        </ul>
+        <ul class="footer__block__widgets__list">
+          <li class="footer__block__widgets__list__link"><a href="">Pratiquer</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Postures</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Méditation</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Respiration</a></li>
+        </ul>
+        <ul class="footer__block__widgets__list">
+          <li class="footer__block__widgets__list__link"><a href="">Nous contacter</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">Satanama Yoga</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">+ 33 612256989</a></li>
+          <li class="footer__block__widgets__list__link"><a href="">satanama.yoga.school@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p class="footer__copyright__text">2019 Sanatama Team - Build with respect of all the Mantras</p>
+      <div class="footer__copyright__list">
+        <a href="" class="footer__copyright__list__link">Contact</a>
+        <a href="" class="footer__copyright__list__link">Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>

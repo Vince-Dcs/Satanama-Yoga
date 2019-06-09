@@ -1,0 +1,100 @@
+.contact {
+    padding: 4em 2em;
+    width: 100vw;
+    @media (min-width: $breakpoint-medium) {
+        padding: 4em 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: $breakpoint-medium-alt) {
+        padding-top: 10em;
+    }
+    @media (min-width: $breakpoint-large) {
+        align-items: unset;
+        display: flex;
+        flex-direction: row;
+        padding-top: 10em;
+        margin-left: 2em;
+    }
+    @media (min-width: $breakpoint-xlarge) {
+        margin-left: 10em;
+    }
+
+    &__title {
+        color: $color-primary;
+        margin-bottom: 2em;
+    }
+
+    .form {
+        @media (min-width: $breakpoint-medium) {
+            width: 70%;
+        }
+        @media (min-width: $breakpoint-large) {
+            width: 45%;
+        }
+        @media (min-width: $breakpoint-xlarge) {
+            width: 30%;
+        }
+
+        &__fieldset {
+            
+            .field {
+                margin-bottom: 1em;
+                &__label {
+                    color: $color-primary;
+                    display: block;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    
+                }
+
+                &__input {
+                    background-color: $color-primary;
+                    border: none;
+                    border-radius: 5px;
+                    color: $color-secondary;
+                    height: 40px;
+                    padding: .5em;
+                    width: 100%;
+                    @media (min-width: $breakpoint-large) {
+                        width: unset;
+                    }
+
+                    &:focus{
+                        border: unset;
+                    }
+
+                &__textarea {
+                    background-color: $color-primary;
+                    border: none;
+                    border-radius: 5px;
+                    color: $color-secondary;
+                    height: 150px;
+                    padding: .5em;
+                    width: 100%;
+                    @media (min-width: $breakpoint-large) {
+                        width: unset;
+                    }
+                    } 
+                }
+            }
+
+        }
+
+        &__submit-button {
+            background-color: $color-secondary;
+            border: 2px solid $color-primary;
+            border-radius: 5px;
+            color: $color-primary;
+            font-weight: 700;
+            padding: 0.5em 1em;
+            text-transform: uppercase;
+            
+            &:hover  {
+                border: 2px solid $color-alt-secondary;
+                color: $color-alt-secondary;
+            }
+        }
+    }
+}

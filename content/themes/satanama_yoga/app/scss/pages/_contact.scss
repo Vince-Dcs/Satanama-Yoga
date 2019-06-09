@@ -1,0 +1,46 @@
+.newsletter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-medium) {
+        align-items: left; 
+    }
+    p {
+        color: $color-secondary;
+    }
+}
+#satanama_newsletter_email {
+    margin: 1em 0;
+    padding: 0.4em;
+}
+
+#newsletter-button {
+    @include button_secondary;
+    border-radius: 5px;
+}
+
+#newsletter-button:hover {
+    @include button_secondary_hover;
+    border-radius: 5px;
+}
+.contact {
+    @media (min-width: $breakpoint-large) {
+        
+    }
+}
+
+iframe {
+    margin: auto;
+    width: 100%;
+    
+}
+.map__content {
+    padding-top: 3em;
+    @media (min-width: $breakpoint-large) {
+        margin-left: 2em;
+        padding-top: 0;
+    }
+    @media (min-width: $breakpoint-xlarge) {
+        margin-left: 7em;
+    }
+}
